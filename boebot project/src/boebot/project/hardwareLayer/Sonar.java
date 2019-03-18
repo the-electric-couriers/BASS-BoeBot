@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package boebot.project.hardwareLayer;
 
+import TI.*;
 /**
  *
  * @author Luc Verstraaten
  */
 public class Sonar {
-    
+
+    public static void Sonar() {
+
+    }
+
+    public static int pulseEcho() {
+        int pulse;
+        BoeBot.digitalWrite(1, true);
+        BoeBot.wait(1);
+        BoeBot.digitalWrite(1, false);
+        pulse = BoeBot.pulseIn(2, true, 10000);
+        return (pulse / 58);
+    }
 }
