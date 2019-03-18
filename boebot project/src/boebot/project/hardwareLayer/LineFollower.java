@@ -51,6 +51,30 @@ public class LineFollower {
         return Lowest;
     }
 
+    public int getSensorL() {
+        return SensorL;
+    }
+
+    public void setSensorL(int SensorL) {
+        this.SensorL = SensorL;
+    }
+
+    public int getSensorM() {
+        return SensorM;
+    }
+
+    public void setSensorM(int SensorM) {
+        this.SensorM = SensorM;
+    }
+
+    public int getSensorR() {
+        return SensorR;
+    }
+
+    public void setSensorR(int SensorR) {
+        this.SensorR = SensorR;
+    }
+
 
     public boolean lineLeft()
     {
