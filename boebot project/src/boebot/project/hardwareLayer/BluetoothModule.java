@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package boebot.project.hardwareLayer;
-
+import TI.*;
 /**
  *
  * @author Luc Verstraaten
  */
 public class BluetoothModule {
-    
+        private static int command;
+    public BluetoothModule()
+    {
+
+    }
+    static SerialConnection conn = new SerialConnection(115200);
+    public static int ReadBluetooth(){
+        if(conn.available() > 0){
+            command = conn.readByte();
+        }
+        
+        return command;
+    }
 }
