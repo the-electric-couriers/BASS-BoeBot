@@ -5,6 +5,7 @@
  */
 package boebot.project;
 
+import boebot.project.communicationLayer.*;
 /**
  *
  * @author Luc Verstraaten
@@ -16,6 +17,7 @@ public class BoebotProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FrameControl.achtje();
     }
     
 }
